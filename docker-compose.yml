@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  web:
+    build: .
+    restart: always
+    environment:
+      # Creates clickable link in Coolify UI & routes to port 80
+      - SERVICE_FQDN_WEB_80
